@@ -100,7 +100,7 @@ class CocoDataLoader(DatasetMixin):
         # print(scale)
 
         resized_img, resized_mask, resized_poses = self.resize_data(img, ignore_mask, poses, shape)
-        return resized_img, resized_mask, poses
+        return resized_img, resized_mask, resized_poses
 
     def random_rotate_img(self, img, mask, poses):
         h, w, _ = img.shape
